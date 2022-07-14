@@ -1,5 +1,6 @@
 import './style.css'
 import './variables.scss'
+import  newColorBtn  from './btn.module.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 
@@ -13,6 +14,7 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Hola Mundo con Vite</h1>
     <div class="card">
+      <button id="btn" type="button">Click me!</button>
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
@@ -20,5 +22,7 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+
+document.getElementById('btn').className = newColorBtn.btn 
 
 setupCounter(document.querySelector('#counter'))
