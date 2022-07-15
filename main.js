@@ -7,6 +7,7 @@ import javascriptLogo from './javascript.svg'
 
 import { setupCounter } from './counter.js'
 import dataInJson from './data.json'
+import suma from './love.ts'
 
 // const modules = import.meta.glob('./modules/*.js');
 
@@ -22,6 +23,8 @@ import dataInJson from './data.json'
 // }
 
 // console.info(modules);
+
+console.log(suma(2,3))
 
 
 document.querySelector('#app').innerHTML = `
