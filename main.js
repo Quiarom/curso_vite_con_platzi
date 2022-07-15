@@ -8,6 +8,22 @@ import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import dataInJson from './data.json'
 
+// const modules = import.meta.glob('./modules/*.js');
+
+// for(const path in modules){
+//   async function fetchModule(){
+//     const module = await modules[path]();
+//     module.load();
+//   }
+//   fetchModule();
+//   // modules[path]().then((module)=>{
+//   //   module.load();
+//   // })
+// }
+
+// console.info(modules);
+
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
